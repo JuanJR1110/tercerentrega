@@ -1,0 +1,10 @@
+.container {
+  margin-top: 50px;
+  background-color: rgba(116, 243, 120, 0.5215686275);
+}
+.container a {
+  color: black;
+}
+.container .btn {
+  color: white;
+}/*# sourceMappingURL=inicio.component.css.map */

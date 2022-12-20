@@ -1,0 +1,27 @@
+<h2>Adquiriendo entrada</h2>
+<form class="w-50">
+    <div class="mb-3">
+       <label for="tipodId" class="form-label">Tipo identificación</label>
+          <select class="form-select" id="tipo" name="tipo" [(ngModel)]="participante.tipo">
+          <option selected disabled >Choose...</option>
+          <option value="CC">Cédula Ciudadania</option>
+          <option value="contrasena">Contraseña</option>
+          <option value="Pasaporte">Pasaporte</option>
+          <option value="CC extranjera" >CC extranjera</option>
+          </select>
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">Número de la identificación</label>
+        <input type="number" class="form-control" id="identificacion" name="identificacion" [(ngModel)]="participante.identificacion">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="participante.nombre">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" name="correo" [(ngModel)]="participante.correo">
+      </div>
+      <button type="button" (click)="OnCreate()" class="btn btn-primary">Comprar</button>
+      <a class="btn btn-dark" role="button" [routerLink]="['/inicio']"> Regresar</a>
+    </form>

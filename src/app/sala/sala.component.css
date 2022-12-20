@@ -1,0 +1,28 @@
+.contenido {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: 30% 70%;
+}
+.contenido .info {
+  grid-column: 1;
+  padding: 10px;
+  margin-top: 30%;
+}
+.contenido .participantes {
+  grid-column: 2;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  background: green;
+  color: white;
+  width: 100%;
+}
+
+#btn-eliminar {
+  background: red;
+  color: white;
+  width: 100%;
+}/*# sourceMappingURL=sala.component.css.map */

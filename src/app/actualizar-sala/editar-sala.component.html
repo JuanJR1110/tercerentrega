@@ -1,0 +1,17 @@
+<h2>Actualizar la sala # <span>{{id}}</span></h2>
+<form class="w-50">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Cantidad máxima</label>
+    <input type="number" class="form-control" id="maximo" name="maximo" [(ngModel)]="sala.maximo" >
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Valor de la sala</label>
+      <input type="number" class="form-control" id="valor" name="valor" [(ngModel)]="sala.valor">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Fecha sorteo</label>
+      <input type="date" class="form-control" id="fecha" name="fecha" [(ngModel)]="sala2.fecha">
+    </div>
+  <button type="button" (click)="Update()" class="btn btn-primary">Actualizar Sala</button>
+  <a class="btn btn-danger" role="button" [routerLink]="['/inicio']"> Cancelar</a>
+</form>

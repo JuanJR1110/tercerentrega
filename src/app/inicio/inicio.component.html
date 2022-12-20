@@ -1,0 +1,26 @@
+<div class="container">
+
+  <a class="btn btn-primary" role="button" [routerLink]="['/crear']">Nueva Sala</a>
+  <h3>Salas</h3>
+
+
+<ul>
+    <li *ngFor="let items of salas, let i=index">
+    <div   class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Sala <b>#{{i+1}}</b></h5>
+          <p class="card-text">Sorteo <b># {{items.id}}</b></p>
+          <p class="card-text">Maximo <b># {{items.maximo}}</b></p>
+          <p class="card-text">Pagados <b># {{items.cantidad}}</b></p>
+          <p class="card-text">Fecha <b># {{items.fecha}}</b></p>
+          <p class="card-text">
+          <a class="btn btn-success" role="button" [routerLink]="['/editar',items.id]"><i class="bi bi-pencil-square"></i></a>--
+          <a class="btn btn-dark" role="button" [routerLink]="['/sala',items.id]"><i class="bi bi-eye"></i></a>--
+          <a *ngIf="items.activar==true"  class="btn btn-primary" role="button" [routerLink]="['/comprar',items.id]"><span>$</span>{{items.valor}}</a>
+          </p>
+          
+        </div>
+      </div>
+    </li>  
+</ul>
+</div>        

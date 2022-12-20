@@ -1,0 +1,35 @@
+<div class="contenido">
+<div class="info">
+  <button type="button" (click)="OnGanador()" class="btn btn btn-primary">REALIZAR SORTEO</button>
+  <button class="btn btn-warning" type="button" (click)="OnDelete()">Eliminar Sala</button>
+ </div>
+
+<div class="participantes">
+    <h3>Inscritos:</h3>
+<table class="table table-primary">
+    
+    <thead class="">
+        <tr>
+           <th scope="col">Nombre</th>
+           <th scope="col">Número</th>
+        </tr>
+     </thead>
+     <tbody class="">
+         <tr *ngFor="let item of sala.participantes">
+            <td>{{item.nombre}}</td>
+            <td>{{item.id}}</td>
+         </tr>
+    </tbody>
+</table>
+</div>
+</div>
+  
+  <div *ngIf="mostrar==true" class="card" style="width: 14rem;">
+    <img src="/assets/imgs/logo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Número ganador <b><b>{{ganador.numero}}</b></b></h5>
+      <b>{{ganador.nombre}}</b> identificad@ <b><span>*****</span>{{g2}}</b>, es el feliz ganador o la feliz
+         ganadora del Sorteo #<b>{{ganador.id}}</b> con el número <b>{{ganador.numero}}</b>
+    </div>
+  </div>
+

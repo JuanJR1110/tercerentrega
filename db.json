@@ -1,0 +1,43 @@
+{
+  "salas": [
+    {
+      "participantes": [],
+      "id": 1,
+      "premio": 11000,
+      "cantidad": 1,
+      "valor": 11000,
+      "maximo": 7,
+      "fecha": "2022-01-01",
+      "activar": true
+    },
+    {
+      "participantes": [],
+      "id": 2,
+      "premio": 383,
+      "cantidad": 1,
+      "valor": 383,
+      "maximo": 21,
+      "fecha": "2022-01-02",
+      "activar": true
+    }
+  ],
+  "ganadores": [],
+  "participantes": [
+    {
+      "tipo": "Pasaporte",
+      "identificacion": 2,
+      "nombre": "Neymar",
+      "correo": "jhsoñkgkñdsjhjñh",
+      "sala": 1,
+      "id": 1
+    },
+    {
+      "id": 3,
+      "tipo": "contrasena",
+      "identificacion": 3,
+      "nombre": "kuh321",
+      "correo": "jhsoñkgkñdsjhjñh",
+      "sala": 2
+    }
+  ]
+}
